@@ -53,7 +53,7 @@ void init_target_properties()
 {
     std::string device;
 
-    device = property_get("ro.cm.device");
+    device = property_get("ro.slim.device");
     if (device != "tomato")
         return;
 
