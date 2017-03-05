@@ -182,4 +182,12 @@
         <item>"/data/dalvik-cache/arm64/system@framework@boot.oat"</item>
         <item>"/data/dalvik-cache/arm64/system@framework@services.jar@classes.dex"</item>
    </string-array>
+
+    <!-- Enable doze powersaving -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <integer name="config_screenBrightnessDoze">10</integer>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_dozePulsePickup">true</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
 </resources>
