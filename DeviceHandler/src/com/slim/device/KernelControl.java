@@ -37,12 +37,6 @@ import java.io.File;
 
 public final class KernelControl {
 
-    // Notification slider
-    public static final String SLIDER_SWAP_NODE = "/proc/s1302/key_rep";
-    public static final String KEYCODE_SLIDER_TOP = "/proc/tri-state-key/keyCode_top";
-    public static final String KEYCODE_SLIDER_MIDDLE = "/proc/tri-state-key/keyCode_middle";
-    public static final String KEYCODE_SLIDER_BOTTOM = "/proc/tri-state-key/keyCode_bottom";
-
     private KernelControl() {
         // this class is not supposed to be instantiated
     }
@@ -72,12 +66,4 @@ public final class KernelControl {
         }
         return false;
     }
-
-    public static boolean hasSlider() {
-        return new File(KEYCODE_SLIDER_TOP).exists() &&
-            new File(KEYCODE_SLIDER_MIDDLE).exists() &&
-            new File(KEYCODE_SLIDER_BOTTOM).exists() &&
-            new File(SLIDER_SWAP_NODE).exists();
-    }
-
 }

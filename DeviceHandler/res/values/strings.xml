@@ -25,7 +25,6 @@
     <string name="group_applications">Applications</string>
     <string name="select_custom_app_title">Select custom application</string>
 
-
     <string name="enable_gestures_title">Enable gestures</string>
     <string name="enable_gestures_summary">Enable screen off gestures</string>
     <string name="gestures_title">Gestures</string>
@@ -33,25 +32,9 @@
     <string name="gesture_arrow_left_title">Arrow left</string>
     <string name="gesture_arrow_right_title">Arrow right</string>
     <string name="gesture_arrow_up_title">Arrow up</string>
-    <string name="gesture_circle_title">Circle</string>
-    <string name="gesture_double_swipe_title">Double finger swipe down</string>
-    <string name="gesture_double_tap_title">Double tap</string>
-
-     <!-- Notification slider -->
-    <string name="notification_slider">Notification slider</string>
-    <string name="action">Action</string>
-
-    <string name="top_position">Top position</string>
-    <string name="middle_position">Middle position</string>
-    <string name="bottom_position">Bottom position</string>
-    <string name="total_silence">Total silence</string>
-    <string name="alarms_only">Alarms only</string>
-    <string name="priority_only">Priority only</string>
-    <string name="none">All notifications</string>
-    <string name="vibrate">Vibrate</string>
-    <string name="ring">Ring</string>
-
-    <string name="button_swap_title">Swap buttons</string>
-    <string name="button_swap_summary">Swap the order of recents and back buttons</string>
-
+    <string name="gesture_letter_o">Letter O</string>
+    <string name="gesture_letter_c">Letter C</string>
+    <string name="gesture_letter_e">Letter E</string>
+    <string name="gesture_letter_m">Letter M</string>
+    <string name="gesture_letter_w">Letter W</string>
 </resources>

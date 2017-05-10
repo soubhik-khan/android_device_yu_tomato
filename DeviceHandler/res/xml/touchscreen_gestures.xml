@@ -2,32 +2,47 @@
 <touchscreen-gestures xmlns:slim="http://schemas.android.com/apk/res-auto">
     <gesture
         slim:name="@string/gesture_arrow_down_title"
-        slim:path="/proc/touchpanel/down_arrow_enable"
-        slim:scancode="252"
-        slim:defaultAction="**ring_vib_silent**" />
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="249"
+        slim:defaultAction="**media_play_pause**" />
     <gesture
+        slim:name="@string/gesture_arrow_up_title"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="254"
+        slim:defaultAction="**ring_vib_silent**" />    
+     <gesture
         slim:name="@string/gesture_arrow_left_title"
-        slim:path="/proc/touchpanel/left_arrow_enable"
-        slim:scancode="253"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="250"
         slim:defaultAction="**media_previous**" />
     <gesture
         slim:name="@string/gesture_arrow_right_title"
-        slim:path="/proc/touchpanel/right_arrow_enable"
-        slim:scancode="254"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="251"
         slim:defaultAction="**media_next**" />
     <gesture
-        slim:name="@string/gesture_arrow_up_title"
-        slim:path="/proc/touchpanel/up_arrow_enable"
-        slim:scancode="255"
+        slim:name="@string/gesture_letter_o"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="253"
         slim:defaultAction="**torch**" />
     <gesture
-        slim:name="@string/gesture_circle_title"
-        slim:path="/proc/touchpanel/letter_o_enable"
-        slim:scancode="250"
+        slim:name="@string/gesture_letter_c"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="252"
         slim:defaultAction="**camera**" />
     <gesture
-        slim:name="@string/gesture_double_swipe_title"
-        slim:path="/proc/touchpanel/double_swipe_enable"
-        slim:scancode="251"
-        slim:defaultAction="**media_play_pause**" />
+        slim:name="@string/gesture_letter_e"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="255"
+        slim:defaultAction="**null**" />
+    <gesture
+        slim:name="@string/gesture_letter_m"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="256"
+        slim:defaultAction="**null**" />
+    <gesture
+        slim:name="@string/gesture_letter_w"
+        slim:path="/sys/devices/virtual/touchscreen/touchscreen_dev/gesture_ctrl"
+        slim:scancode="257"
+        slim:defaultAction="**null**" />
 </touchscreen-gestures>

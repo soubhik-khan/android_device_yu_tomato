@@ -26,7 +26,6 @@ import android.preference.PreferenceManager;
 
 import com.slim.device.KernelControl;
 import com.slim.device.settings.ScreenOffGesture;
-import com.slim.device.settings.SliderSettings;
 import com.slim.device.util.FileUtils;
 
 import java.io.File;
@@ -47,23 +46,6 @@ public class BootReceiver extends BroadcastReceiver {
                 KernelControl.enableGestures(context,
                         screenOffGestureSharedPreferences.getBoolean(
                         ScreenOffGesture.PREF_GESTURE_ENABLE, true));
-            }
-
-            // Disable slider settings if needed
-            if (!KernelControl.hasSlider()) {
-                disableComponent(context, SliderSettings.class.getName());
-            } else {
-                enableComponent(context, SliderSettings.class.getName());
-
-                String sliderTop = getPreferenceString(context, "keycode_top_position", "601");
-                String sliderMiddle = getPreferenceString(context, "keycode_middle_position", "602");
-                String sliderBottom = getPreferenceString(context, "keycode_bottom_position", "603");
-                boolean sliderSwap = getPreferenceBoolean(context, "button_swap", false);
-
-                FileUtils.writeLine(KernelControl.KEYCODE_SLIDER_TOP, sliderTop);
-                FileUtils.writeLine(KernelControl.KEYCODE_SLIDER_MIDDLE, sliderMiddle);
-                FileUtils.writeLine(KernelControl.KEYCODE_SLIDER_BOTTOM, sliderBottom);
-                FileUtils.writeLine(KernelControl.SLIDER_SWAP_NODE, sliderSwap ? "1" : "0");
             }
         }
     }
