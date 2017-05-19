@@ -23,7 +23,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import com.cyanogenmod.settings.device.utils.FileUtils;
 import com.cyanogenmod.settings.device.utils.Constants;
 
 public class Startup extends BroadcastReceiver {
@@ -33,7 +33,7 @@ public class Startup extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, final Intent intent) {
         final String action = intent.getAction();
-        if (!action.equals(cyanogenmod.content.Intent.ACTION_INITIALIZE_CM_HARDWARE)) {
+        if (!action.equals(Intent.ACTION_BOOT_COMPLETED)) {
             return;
         }
 
